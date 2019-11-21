@@ -23,21 +23,21 @@
   </a>
 
   <h3 align="center">
-	Your Title Here
+	Members Only
   </h3>
 
   <p align="center">
-    Describe project
+    Members only is exclusive clubhouse where your members can write embarrassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
     <br />
-    <a href="https://github.com/[github-user]/[repo-name]/blob/master/README.md"><strong>Explore the docs 📚</strong></a>
+    <a href="https://github.com/raheebwa/members-only/blob/develop/README.md"><strong>Explore the docs 📚</strong></a>
     <br />
     <br />
 	  🖊️
     <a href="https://www.theodinproject.com">Assigment</a>
     🐛
-    <a href="https://github.com/[github-user]/[repo-name]/issues">Report Bug</a>
+    <a href="https://github.com/raheebwa/members-only/issues">Report Bug</a>
     🙏
-    <a href="https://github.com/[github-user]/[repo-name]/issues">Request Feature</a>
+    <a href="https://github.com/raheebwa/members-only/issues">Request Feature</a>
   </p>
 </p>
 
@@ -83,13 +83,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/[github-user]/[repo-name].svg?style=flat-square
-[contributors-url]: https://github.com/[github-user]/[repo-name]/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/[github-user]/[repo-name]
-[forks-url]: https://github.com/[github-user]/[repo-name]/network/members
-[stars-shield]: https://img.shields.io/github/stars/[github-user]/[repo-name]
-[stars-url]: https://github.com/[github-user]/[repo-name]/stargazers
-[issues-shield]: https://img.shields.io/github/issues/[github-user]/[repo-name]
-[issues-url]: https://github.com/[github-user]/[repo-name]/issues
-[license-shield]: https://img.shields.io/github/license/[github-user]/[repo-name]
-[license-url]: https://github.com/[github-user]/[repo-name]/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/raheebwa/members-only.svg?style=flat-square
+[contributors-url]: https://github.com/raheebwa/members-only/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/raheebwa/members-only
+[forks-url]: https://github.com/raheebwa/members-only/network/members
+[stars-shield]: https://img.shields.io/github/stars/raheebwa/members-only
+[stars-url]: https://github.com/raheebwa/members-only/stargazers
+[issues-shield]: https://img.shields.io/github/issues/raheebwa/members-only
+[issues-url]: https://github.com/raheebwa/members-only/issues
+[license-shield]: https://img.shields.io/github/license/raheebwa/members-only
+[license-url]: https://github.com/raheebwa/members-only/blob/master/LICENSE.txt
