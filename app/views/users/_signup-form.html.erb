@@ -1,0 +1,19 @@
+<%= form_for :user do |f| %>
+    <% if @user && @user.errors.any? %>
+    <div>
+        <ul>
+            <% @user.errors.full_messages.each do |error| %>
+            <li><%= error %></li>
+            <% end %>
+        </ul>
+    </div>
+    <% end %>
+
+    Username: <%= f.text_field :name, placeholder: "Your user name here" %><br />
+    Email : <%= f.email_field :email, placeholder: "Please enter your email" %><br />
+    Password : <%= f.password_field :password, placeholder: "Enter the password" %><br />
+    Confirm password : <%= f.password_field :password_confirmation, placeholder: "Confirm the password" %><br />
+    <%= f.submit 'Sign Up'%>
+<% end %>
+
+<%= link_to 'home page', root_path %>
