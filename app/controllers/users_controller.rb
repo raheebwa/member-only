@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
-    before_action :set_user, only: %i[edit update]
+  before_action :set_user, only: %i[edit update]
 
   def new; end
 
@@ -24,6 +26,7 @@ class UsersController < ApplicationController
   end
 
   private
+
   def set_user
     @user = User.find(params[:id])
   end

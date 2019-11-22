@@ -8,9 +8,19 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true, format: /\w+@\w+\.{1}[a-zA-Z]{2,}/
   validates :password, presence: true, confirmation: true, length: { minimum: 6 }
 
+  class << self
+    def new_token
+      SecureRandom.urlsafe_base64
+    end
+
+    def digest(token)
+      Digest::SHA1.hexdigest(token.to_s)
+    end
+  end
+
   private
 
   def create_digest
-    self.remember_token = Digest::SHA1.hexdigest(SecureRandom.urlsafe_base64.to_s)
+    self.remember_token = User.digest(User.new_token)
   end
 end

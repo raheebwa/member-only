@@ -1,0 +1,7 @@
+<h1>Home</h1>
+
+<% if @signed_in %>
+<%= link_to 'sign out', signout_path, method: :delete %>
+<% else %>
+<%= link_to 'sign in', new_session_path  %>
+<% end %>
