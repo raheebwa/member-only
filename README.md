@@ -29,15 +29,15 @@
   <p align="center">
     Pssts is an exclusive clubhouse where members can write embarrassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
     <br />
-    <a href="https://github.com/raheebwa/members-only/blob/develop/README.md"><strong>Explore the docs 📚</strong></a>
+    <a href="https://github.com/raheebwa/member-only/blob/develop/README.md"><strong>Explore the docs 📚</strong></a>
     <br />
     <br />
 	  🖊️
-    <a href="https://www.theodinproject.com">Assigment</a>
+    <a href="https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication">Assigment</a>
     🐛
-    <a href="https://github.com/raheebwa/members-only/issues">Report Bug</a>
+    <a href="https://github.com/raheebwa/member-only/issues">Report Bug</a>
     🙏
-    <a href="https://github.com/raheebwa/members-only/issues">Request Feature</a>
+    <a href="https://github.com/raheebwa/member-only/issues">Request Feature</a>
   </p>
 </p>
 
@@ -88,13 +88,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/raheebwa/members-only.svg?style=flat-square
-[contributors-url]: https://github.com/raheebwa/members-only/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/raheebwa/members-only
-[forks-url]: https://github.com/raheebwa/members-only/network/members
-[stars-shield]: https://img.shields.io/github/stars/raheebwa/members-only
-[stars-url]: https://github.com/raheebwa/members-only/stargazers
-[issues-shield]: https://img.shields.io/github/issues/raheebwa/members-only
-[issues-url]: https://github.com/raheebwa/members-only/issues
-[license-shield]: https://img.shields.io/github/license/raheebwa/members-only
-[license-url]: https://github.com/raheebwa/members-only/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/raheebwa/member-only.svg?style=flat-square
+[contributors-url]: https://github.com/raheebwa/member-only/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/raheebwa/member-only
+[forks-url]: https://github.com/raheebwa/member-only/network/members
+[stars-shield]: https://img.shields.io/github/stars/raheebwa/member-only
+[stars-url]: https://github.com/raheebwa/member-only/stargazers
+[issues-shield]: https://img.shields.io/github/issues/raheebwa/member-only
+[issues-url]: https://github.com/raheebwa/member-only/issues
+[license-shield]: https://img.shields.io/github/license/raheebwa/member-only
+[license-url]: https://github.com/raheebwa/member-only/blob/master/LICENSE.txt

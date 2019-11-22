@@ -11,8 +11,8 @@ class SessionsController < ApplicationController
       flash.now[:alert] = 'Email is invalid'
       render 'new'
     elsif user.authenticate(params[:sessions][:password])
-        sign_in user
-        redirect_to root_url, notice: 'Logged in!'
+      sign_in user
+      redirect_to root_url, notice: 'Logged in!'
     else
       flash.now[:alert] = 'password is invalid'
       render 'new'
