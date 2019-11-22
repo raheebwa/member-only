@@ -1,2 +1,43 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<h1>List of Posts</h1>
+
+<% if @signed_in %>
+<h3>Logged in as: <%= @current_user.name %></h3>
+<hr>
+<p><%= link_to  "Create New Post", posts_new_path %></p>
+<% end %>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Title</td>
+            <td>Body</td>
+            <% if @signed_in %>
+              <td>Author</td>
+            <% end %>
+            <td colspan="3"></td>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @posts.each do |post| %>
+        <tr>
+            <td><%= post.title %></td>
+            <td><%= post.body %></td>
+            <% if @signed_in %>
+              <td>
+                  <%= post.user.name%>
+              </td>
+            <% end %>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
+
+<hr>
+
+<% if @signed_in %>
+<%= link_to 'sign out', signout_path, method: :delete %>
+<% else %>
+<%= link_to 'sign in', new_session_path  %>
+<% end %>
+

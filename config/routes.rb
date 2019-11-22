@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   get 'sessions/new'
   get 'sessions/create'
   get 'sessions/delete'
-  resource :home, controller: :home, only: [:show]
-  root to: 'home#index'
-  get 'home/show'
+
+  root to: 'posts#index'
+  
   resources :sessions, only: [:create, :new, :destroy ]
   post 'posts/new' => 'posts#create'
   get 'signup' => "users#new"

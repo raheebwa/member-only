@@ -4,6 +4,8 @@ class User < ApplicationRecord
   has_secure_password
   before_create :create_digest
 
+  has_many :posts
+
   validates :name, presence: true, length: { in: 6..20 }, uniqueness: true
   validates :email, presence: true, uniqueness: true, format: /\w+@\w+\.{1}[a-zA-Z]{2,}/
   validates :password, presence: true, confirmation: true, length: { minimum: 6 }
