@@ -27,7 +27,7 @@
   </h3>
 
   <p align="center">
-    Members only is exclusive clubhouse where your members can write embarrassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
+    Pssts is an exclusive clubhouse where members can write embarrassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
     <br />
     <a href="https://github.com/raheebwa/members-only/blob/develop/README.md"><strong>Explore the docs 📚</strong></a>
     <br />
@@ -41,8 +41,12 @@
   </p>
 </p>
 
-# Your Sub-title here
-Describe here
+# Mastering Auth without gems in Rails
+Building a basic Authorization and Authentification System from the ground up to use in a Micropost APP.
+
+![unsigned](doc/main-unsigned.png)
+![signin](doc/signin.png)
+![signup](doc/signup.png)
 
 # Validations
 
@@ -54,6 +58,7 @@ Rubocop:
 
 * Using different databases for development (sqlite3) and production (postgres)
 * Followed the tutorial
+* Added session and cookie tokens
 * Tests made with [`RSpec`](https://relishapp.com/rspec/)
 
 # Built With

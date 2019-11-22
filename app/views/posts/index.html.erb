@@ -1,4 +1,12 @@
-<h1>List of Posts</h1>
+<h1>Pssts: Secret Share Clubhouse</h1>
+<h3>
+    An exclusive clubhouse where members can write embarrassing posts about non-members. 
+</h3>
+
+<p>
+    Inside the clubhouse, members can see who the author of a post is but, outside, they can 
+    only see the story and wonder who wrote it. To be part of the members you must sign up.
+</p>
 
 <% if @signed_in %>
 <h3>Logged in as: <%= @current_user.name %></h3>
@@ -36,8 +44,8 @@
 <hr>
 
 <% if @signed_in %>
-<%= link_to 'sign out', signout_path, method: :delete %>
+<%= link_to 'Sign Out', signout_path, method: :delete %>
 <% else %>
-<%= link_to 'sign in', new_session_path  %>
+<%= link_to 'Sign In', new_session_path  %> |
+<%= link_to 'Sign Up', signup_path %>
 <% end %>
-

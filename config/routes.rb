@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'signup' => "users#new"
   post 'signup' => 'users#create'
   post 'sessions/new' => 'sessions#create'
+  post 'sessions/create' => 'sessions#create'
   get 'signout' => 'sessions#delete'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -1,6 +1,6 @@
 <%= form_for :user do |f| %>
     <% if @user && @user.errors.any? %>
-    <div>
+    <div class="alert alert-danger" role="alert">
         <ul>
             <% @user.errors.full_messages.each do |error| %>
             <li><%= error %></li>
@@ -16,4 +16,4 @@
     <%= f.submit 'Sign Up'%>
 <% end %>
 
-<%= link_to 'home page', root_path %>
+<%= link_to 'Home Page', root_path %>

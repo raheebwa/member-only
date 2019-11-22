@@ -1,6 +1,6 @@
 <%= form_for :sessions do |f| %>
     <% if @sessions && @sessions.errors.any? %>
-    <div>
+    <div class="alert alert-danger" role="alert">
         <ul>
             <% :sessions.errors.full_messages.each do |error| %>
             <li><%= error %></li>
@@ -15,7 +15,8 @@
     <%= f.label :password %>
     <%= f.password_field :password, placeholder: "Enter the password" %>
 
-    <%= f.submit "Sign Up" %>
+    <%= f.submit "Sign in" %>
 <% end %>
 
-<%= link_to 'home page', root_path %>
+<%= link_to 'Home page', root_path %> |
+<%= link_to 'Create User', signup_path %>

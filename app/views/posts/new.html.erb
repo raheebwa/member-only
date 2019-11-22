@@ -2,7 +2,7 @@
 
 <%= form_for :post do |f| %>
 <% if @post && @post.errors.any? %>
-<div>
+<div class="alert alert-danger" role="alert">
     <ul>
         <% @post.errors.full_messages.each do |error| %>
         <li><%= error %></li>
@@ -15,10 +15,12 @@
 <%= f.text_field :title %><br>
 <br>
 
-<%= f.label :body, "body" %><br>
+<%= f.label :body, "Your Post" %><br>
 <%= f.text_area :body %><br>
 <br>
 
-<%= f.submit "Submit" %>
+<%= f.submit "Submit Post" %>
 
 <% end %>
+
+<%= link_to 'Home page', root_path %>
