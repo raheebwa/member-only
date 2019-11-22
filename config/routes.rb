@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts, only: [:create, :new, :index ]
   get 'sessions/new'
   get 'sessions/create'
   get 'sessions/delete'
@@ -6,6 +7,7 @@ Rails.application.routes.draw do
   root to: 'home#index'
   get 'home/show'
   resources :sessions, only: [:create, :new, :destroy ]
+  post 'posts/new' => 'posts#create'
   get 'signup' => "users#new"
   post 'signup' => 'users#create'
   post 'sessions/new' => 'sessions#create'
