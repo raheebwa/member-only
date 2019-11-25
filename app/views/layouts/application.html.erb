@@ -18,6 +18,13 @@
       <div class="alert alert-<%= key %>"><%= value %></div>
       <% end %>
       <%= yield %>
+      
+      <% if @signed_in %>
+      <%= link_to 'Sign Out', signout_path, method: :delete %>
+      <% else %>
+      <%= link_to 'Sign In', new_session_path  %> |
+      <%= link_to 'Sign Up', signup_path %>
+      <% end %>
     </div>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

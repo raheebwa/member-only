@@ -42,10 +42,3 @@
 </table>
 
 <hr>
-
-<% if @signed_in %>
-<%= link_to 'Sign Out', signout_path, method: :delete %>
-<% else %>
-<%= link_to 'Sign In', new_session_path  %> |
-<%= link_to 'Sign Up', signup_path %>
-<% end %>
