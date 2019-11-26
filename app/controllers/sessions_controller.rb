@@ -5,9 +5,7 @@ class SessionsController < ApplicationController
 
   def create
     user = User.find_by_email(params[:sessions][:email])
-    p user
     if user.nil?
-      p user
       flash.now[:alert] = 'Email is invalid'
       render 'new'
     elsif user.authenticate(params[:sessions][:password])
