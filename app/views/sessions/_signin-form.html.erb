@@ -1,0 +1,22 @@
+<%= form_for :sessions do |f| %>
+    <% if @sessions && @sessions.errors.any? %>
+    <div class="alert alert-danger" role="alert">
+        <ul>
+            <% :sessions.errors.full_messages.each do |error| %>
+            <li><%= error %></li>
+            <% end %>
+        </ul>
+    </div>
+    <% end %>
+
+    <%= f.label :email %>
+    <%= f.email_field :email, placeholder: "Please enter your email" %>
+    
+    <%= f.label :password %>
+    <%= f.password_field :password, placeholder: "Enter the password" %>
+
+    <%= f.submit "Sign in" %>
+<% end %>
+
+<%= link_to 'Home page', root_path %> |
+<%= link_to 'Create User', signup_path %>
